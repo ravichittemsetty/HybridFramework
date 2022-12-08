@@ -15,6 +15,7 @@ public class TC3 extends StartBrowser{
 		cfs.login();
 
 		cfs.logout();
+		//added the few comments
 	}
 		
 }

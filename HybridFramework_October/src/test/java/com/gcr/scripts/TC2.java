@@ -34,5 +34,6 @@ public class TC2 extends StartBrowser{
 			throw e;
 		}
 		cfs.logout();
+		//added the new comments in the TC
 	}
 }
