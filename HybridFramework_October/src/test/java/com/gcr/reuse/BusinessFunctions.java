@@ -6,7 +6,7 @@ import com.gcr.commands.ActionDriver;
 import com.gcr.config.StartBrowser;
 import com.gcr.or.WebShopHomePage;
 import com.gcr.or.WebShopLoginPage;
-import com.gcr.or.WebShopLogoutPage;
+
 
 public class BusinessFunctions {
 	public WebDriver driver;
@@ -25,7 +25,13 @@ public class BusinessFunctions {
 		ad.type(WebShopLoginPage.txtEmail, "ravichandrachittemsetty@gmail.com", "Email text box");
 		ad.type(WebShopLoginPage.txtPassword, "Smile@4uu", "Password Textbox");
 		ad.click(WebShopLoginPage.btnLogin, "Login Button");
-		ad.click(WebShopLogoutPage.btnLogout, "Logout Link");
+				
+	}
+	public void logoutWebShop()throws Exception
+	{
+		StartBrowser.childTest =StartBrowser.parentTest.createNode("LogOut to WebShop application");
+	
+		ad.click(WebShopHomePage.lnkLogout, "Logout Link");
 		
 	}
 
