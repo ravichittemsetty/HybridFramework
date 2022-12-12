@@ -27,6 +27,16 @@ public class BusinessFunctions {
 		ad.click(WebShopLoginPage.btnLogin, "Login Button");
 				
 	}
+	public void loginWebShop(String userName, String password)throws Exception
+	{
+		StartBrowser.childTest =StartBrowser.parentTest.createNode("Login to WebShop application using parameters");
+		ad.navigateToApplication("https://demowebshop.tricentis.com/");
+		ad.click(WebShopHomePage.lnklogin, "Login Link");
+		ad.type(WebShopLoginPage.txtEmail, userName, "Email text box");
+		ad.type(WebShopLoginPage.txtPassword, password, "Password Textbox");
+		ad.click(WebShopLoginPage.btnLogin, "Login Button");
+				
+	}
 	public void logoutWebShop()throws Exception
 	{
 		StartBrowser.childTest =StartBrowser.parentTest.createNode("LogOut to WebShop application");

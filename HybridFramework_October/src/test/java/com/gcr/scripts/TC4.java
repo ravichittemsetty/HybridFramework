@@ -9,6 +9,7 @@ public class TC4 extends StartBrowser{
   @Test
   public void LoginLogout_WebShop() throws Exception {
 	  BusinessFunctions bfs = new BusinessFunctions();
+	  
 	  bfs.loginWebShop();
 	  bfs.logoutWebShop();
 	  
